@@ -1,0 +1,1 @@
+1. Simple stack implementation that can push and pop

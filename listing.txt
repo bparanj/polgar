@@ -2,6 +2,7 @@
 		Reference: Working Effectively with Legacy Code
 2. UnCommenter - Illustrates using Ruby builtin StringIO as a Fake object.
 	  Reference: The Well Grounded Rubyist
+3. Stack - Canonical test structure practice for Given, When, Then using rspec-given gem.
 
 	
 	
