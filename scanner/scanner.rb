@@ -1,7 +1,7 @@
 
 class Scanner
   
-  def scan
+  def scan(barcode)
     
   end
 end
