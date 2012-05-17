@@ -1,18 +1,22 @@
 require_relative 'uncommenter'
+require 'stringio'
 
 describe Uncommenter do
 
   it "should uncomment a given file" do
-    infile = File.new(Dir.pwd + "/uncommenter/test_file.rb")
-    outfile = File.new(Dir.pwd + "/uncommenter/test_file.rb.out", "w")
+
+    input = <<EOM
+    # This is a comment.
+      This is not a comment.
+    # This is another comment
+EOM
+    infile = StringIO.new(input)
+    outfile = StringIO.new("")
     
     Uncommenter.uncomment(infile, outfile)
-    outfile.close
     
-    resultfile = File.open(Dir.pwd + "/uncommenter/test_file.rb.out","r")
-    result_string = resultfile.read
-    result_string.should == "This is not a comment\n"
-    resultfile.close
+    result_string = outfile.string
+    result_string.strip.should == "This is not a comment."
   end
   
 end
