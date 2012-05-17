@@ -13,3 +13,7 @@ attr_reader :last_line_item
 	When we write tests for individual units, we end up with small well-understood pieces. This makes it easy to reason about code.
 	
 	3. Writing a lot of fakes can be tedious. In such cases, mocks can be used. Mock objects are fakes that perform assertions internally. The solution that uses mocks is faster than using Fake display object.
+	
+	4. Run the spec:
+	
+	rspec scanner/scanner_spec.rb --format doc --color

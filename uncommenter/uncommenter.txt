@@ -1,0 +1,9 @@
+1. File accessing is involved with using the right read or write mode. Closing and opening at the appropriate times. 
+
+2. StringIO version is a ruby builtin class that mimics the interface of the file. This version of spec runs faster that the file accessing version. The spec is also smaller. This is basically a Fake object. You don't have to write and maintain a Fake object for file processing.
+
+If you are accessing files in the your tests then it is not unit tests.
+
+3. Run the spec:
+
+rspec uncommenter/uncommenter_spec.rb --format doc --color
