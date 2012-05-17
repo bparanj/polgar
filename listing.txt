@@ -1,4 +1,7 @@
-1. Scanner
+1. Scanner - Fakes and Mocks. 
+		Reference: Working Effectively with Legacy Code
+2. UnCommenter - Illustrates using Ruby builtin StringIO as a Fake object.
+	  Reference: The Well Grounded Rubyist
 
 	
 	
