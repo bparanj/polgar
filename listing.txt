@@ -1,0 +1,11 @@
+1. Scanner
+
+	1. How can we test if the scanner can scan a given item and display the item name and price on a cash register display?
+
+Commit eea65809cf2301a030e802f0c66ee9d534d311ac assumes that we can access the last line item display by doing:
+
+attr_reader :last_line_item
+
+	Using this real object R2d2Display is also slow. Let's use a Fake object to speed up the test.
+	
+	2. Using fake object, the spec now runs fast.
