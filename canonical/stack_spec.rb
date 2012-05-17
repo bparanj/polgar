@@ -1,20 +1,22 @@
 require_relative 'stack'
+require_relative 'given_when_then'
 
 describe Stack do
 
   it "should push a given item" do
-    stack = Stack.new
-    stack.push(1)
+    Given { @stack = Stack.new }
 
-    stack.size.should == 1
+    When  { @stack.push(1) }
+
+    Then  { @stack.size.should == 1 }
   end
 
   it "should pop from the stack" do
     stack = Stack.new
     stack.push(2)
     result = stack.pop
-    
     result.should == 2
     stack.size.should == 0
   end
+  
 end
