@@ -1,19 +1,4 @@
 1. Scanner
 
-	1. How can we test if the scanner can scan a given item and display the item name and price on a cash register display?
-
-Commit eea65809cf2301a030e802f0c66ee9d534d311ac assumes that we can access the last line item display by doing:
-
-attr_reader :last_line_item
-
-	Using this real object R2d2Display is also slow. Let's use a Fake object to speed up the test.
-	
-	2. Using fake object, the spec now runs fast. Dependency injection is used to create scanner object with a fake display.
-	
-	When we write tests, we have to divide and conquer. This test tells us how scanner objects affect displays. This test helps us to see whether a problem is due to scanner (Is scanner fulfilling its responsibility?). This helps us localize errors and save time.
-	
-	When we write tests for individual units, we end up with small well-understood pieces. This makes it easy to reason about code.
-	
-	3. Writing a lot of fakes can be tedious. In such cases, mocks can be used. Mock objects are fakes that perform assertions internally. The solution that uses mocks is faster than using Fake display object.
 	
 	
