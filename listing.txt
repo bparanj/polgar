@@ -2,7 +2,14 @@
 		Reference: Working Effectively with Legacy Code
 2. UnCommenter - Illustrates using Ruby builtin StringIO as a Fake object.
 	  Reference: The Well Grounded Rubyist
-3. Stack - Canonical test structure practice for Given, When, Then using rspec-given gem.
+3. Canonical - Canonical test structure practice for Given, When, Then.
 
+
+TODO:
+
+1. Realistic example of Open Closed Principle
+2. Example of Double dispatch using Rock, Paper, Scissors
+3. Factorial and Fibonacci. Example for : Examples --> Specs --> Requirements
+   slide.
 	
 	

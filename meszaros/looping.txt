@@ -1,0 +1,2 @@
+1. See meszaros gem for how to eliminate loops in specs.
+2. Data driven spec and repeat methods are available in meszaros gem.
