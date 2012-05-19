@@ -1,15 +1,15 @@
 require 'test/unit'
 
-# Version 9
-# Green before and after refactoring. Used idiomatic Ruby to cleanup code. 
-# Named variables expressive of the domain.
-# Recursive solution:
+# Version 10
+# Non-Recursive solution:
 
 class Fibonacci
-  def self.of(n)
-    return 0 if n == 0
-    return 1 if n == 1
-    return of(n - 1) + of(n - 2)
+  def self.of(n)    
+    current, successor = 0,1
+    n.times do
+      current, successor = successor, current + successor
+    end
+    return current
   end
 end
 # 0 1 2 3
