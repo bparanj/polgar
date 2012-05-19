@@ -1,2 +1,7 @@
-1. Exercise:
+1. Exercise: 
+		- Run the mini-test based fibonacci and make sure all tests pass
+		- Move the fibonacci class into its own file and make all the tests pass
+2. Exercise:
     - Convert the given mini-test test to rspec version fibonacci_spec.rb.
+3. Optional:
+	  - Get the output of the mini-test in color.

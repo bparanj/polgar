@@ -1,10 +1,16 @@
 require 'test/unit'
 
-# Version 1
-# Got proper require to execute the test. Proper naming of test following naming convention.
+class Fibonacci
+  def self.of(number)
+    0
+  end
+end
+
+# Version 2
+# Discovery of public API
 class FibonacciTest < Test::Unit::TestCase
-  # test_method_under_test_scenario_expected_behavior
   def test_fibonacci_of_zero_is_zero
-    fail "fail"
+    fib_of_zero = Fibonacci.of(0)
+    assert_equal(fib_of_zero, 0)
   end
 end
