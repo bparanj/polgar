@@ -39,6 +39,7 @@
 		- Common interview question
 		- Learn recursive solution and optimize the execution by using non-recursive solution
 		- Focus on getting it to work first, cleanup by refactoring and then focus on optimization
+		- When refactoring, start green and end in green
 
 TODO:
 
