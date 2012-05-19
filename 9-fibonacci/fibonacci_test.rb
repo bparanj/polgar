@@ -1,8 +1,11 @@
 require 'test/unit'
 
-# Version 6 : The new test broke the implementation. 
-# Commented out the new test to refactor the test in green state.
-# This code is ready to be generalized.
+# Version 8
+# input | output
+# 0         0
+# 1         1
+# 2         1
+# 3         2
 
 class Fibonacci
   def self.of(number)
@@ -11,6 +14,7 @@ class Fibonacci
     elsif number <= 2
       return 1
     end
+    return of(number - 1) + of(number - 2)
   end
 end
 
@@ -30,7 +34,7 @@ class FibonacciTest < Test::Unit::TestCase
     assert_equal(1, fib_of_two)
   end
   
-  def xtest_fibonacci_of_three_is_two
+  def test_fibonacci_of_three_is_two
     fib_of_three = Fibonacci.of(3)
     assert_equal(2, fib_of_three)
   end
