@@ -37,8 +37,8 @@
 TODO:
 
 1. Realistic example of Open Closed Principle
-2. Example of Double dispatch using Rock, Paper, Scissors
-3. Factorial and Fibonacci. Example for : Examples --> Specs --> Requirements
-   slide.
+2. Factorial and Fibonacci. Example for : Examples --> Specs --> Requirements
+   slide. Illustrates Direct Input and Direct Output.
+3. Contract tests. How to write? When to use them?
 	
 	
