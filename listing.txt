@@ -33,6 +33,12 @@
 8. Rock 
 	  - Rock, paper, scissors game
     - How to use double dispatch and make your code object oriented.
+		- Exercise: Replace angry rock gem internal implementation with the double dispatch solution.
+
+9. Fibonacci
+		- Common interview question
+		- Learn recursive solution and optimize the execution by using non-recursive solution
+		- Focus on getting it to work first, cleanup by refactoring and then focus on optimization
 
 TODO:
 
@@ -40,5 +46,9 @@ TODO:
 2. Factorial and Fibonacci. Example for : Examples --> Specs --> Requirements
    slide. Illustrates Direct Input and Direct Output.
 3. Contract tests. How to write? When to use them?
+4. Calculator kata	
 	
-	
+Demo
+
+1. Bowling game demo screencast
+2. Factorial and Fibonacci demo screencast

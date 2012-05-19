@@ -1,0 +1,2 @@
+1. Exercise:
+    - Convert the given mini-test test to rspec version fibonacci_spec.rb.
