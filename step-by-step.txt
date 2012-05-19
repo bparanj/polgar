@@ -1,0 +1,18 @@
+1. 
+
+describe ClassName do
+
+end
+
+2.
+
+it "should return expected value when something happens" do
+
+end
+
+3. 
+
+Given
+When 
+Then
+
