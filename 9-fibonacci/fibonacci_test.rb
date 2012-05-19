@@ -1,23 +1,19 @@
 require 'test/unit'
 
-# Version 8
-# input | output
-# 0         0
-# 1         1
-# 2         1
-# 3         2
+# Version 9
+# Green before and after refactoring. Used idiomatic Ruby to cleanup code. 
+# Named variables expressive of the domain.
+# Recursive solution:
 
 class Fibonacci
-  def self.of(number)
-    if number == 0
-      return 0
-    elsif number <= 2
-      return 1
-    end
-    return of(number - 1) + of(number - 2)
+  def self.of(n)
+    return 0 if n == 0
+    return 1 if n == 1
+    return of(n - 1) + of(n - 2)
   end
 end
-
+# 0 1 2 3
+# 0 1 1 2
 class FibonacciTest < Test::Unit::TestCase
   def test_fibonacci_of_zero_is_zero
     fib_of_zero = Fibonacci.of(0)
@@ -38,4 +34,10 @@ class FibonacciTest < Test::Unit::TestCase
     fib_of_three = Fibonacci.of(3)
     assert_equal(2, fib_of_three)
   end
+
+  def test_fibonacci_of_ten_is_what
+    fib_of_ten = Fibonacci.of(10)
+    assert_equal(55, fib_of_ten)
+  end
+  
 end
