@@ -1,2 +1,0 @@
-1. Simple stack implementation that can push and pop.
-2. Look at the stack_spec.rb. Make the second spec use the Given, When, Then.

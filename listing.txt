@@ -1,9 +1,34 @@
-1. Scanner - Fakes and Mocks. 
+1. Scanner 
+	  - Fakes and Mocks. 
+		
 		Reference: Working Effectively with Legacy Code
-2. UnCommenter - Illustrates using Ruby builtin StringIO as a Fake object.
-	  Reference: The Well Grounded Rubyist
-3. Canonical - Canonical test structure practice for Given, When, Then.
 
+2. UnCommenter 
+		- Illustrates using Ruby builtin StringIO as a Fake object.
+	  
+	 Reference: The Well Grounded Rubyist
+
+3. Canonical 
+		- Canonical test structure practice for Given, When, Then.
+
+4. Meszaros 
+		- How to eliminate loops in specs. Data driven spec and repeat methods are
+ 	    available in meszaros gem.
+
+5. Ruby Extensions 
+		- How to open classes that preserves the semantics of the core classes.
+	 	- What to do when the test passes without failing the first time.
+		- Hiding implementation related classes.
+		- Intention revealing variable names.
+
+6. Angry Rock
+		- How to fix Command Query Separation violation?
+		- Refactoring : Retaining the old interface and the new one at the same time to avoid old
+		  tests from failing
+    - Semantic quirkiness of Well Grounded Rubyist solution exposed by specs.
+
+7. Tautology
+		- How to mock yourself out.
 
 TODO:
 
