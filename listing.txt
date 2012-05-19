@@ -30,6 +30,10 @@
 7. Tautology
 		- How to mock yourself out.
 
+8. Rock 
+	  - Rock, paper, scissors game
+    - How to use double dispatch and make your code object oriented.
+
 TODO:
 
 1. Realistic example of Open Closed Principle

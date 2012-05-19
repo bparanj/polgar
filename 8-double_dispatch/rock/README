@@ -1,0 +1,30 @@
+1. rspec spec/angry_rock/game_spec.rb --color --format doc
+2. For this version of the code. Are we ready to deploy this code to production?
+3. All tests pass. Test code is bad. Production code is bad.
+4. Refactored the test code. Green -> Green
+5. We minimized if conditional statements. Moved it to the main partition and kept our
+   application partition clean.
+6. Sequence diagram: https://docs.google.com/viewer?a=v&q=cache:j7wLfcJuSp8J:www.wirfs-brock.com/PDFs/Book%2520Corrections.pdf+&hl=en&gl=us&pid=bl&srcid=ADGEESjQ2saMu389gW1rGQEFs24gY1Q5Dl0qgt3k_lf7u1XMWmSMiZzlaz1xUZR8cTK5Oo59JAc3eCGGTXsoRYpn9-VDEdOoastpJdBRie1WgaLm-9RyCNPnOfR-EOLxddHr8DtfbeM3&sig=AHIEtbQO5Vs_HhLAaQkaKzhccfXnzm9wUA&pli=1
+
+TODO:
+
+Weird bug in pick_winner method of game coordinator in the case of scissor. Not able to get rid of string and generalize it.
+
+
+Possible combinations = 9
+Rock  Rock
+Rock  Paper
+Rock  Scissor
+
+Paper Rock
+Paper Paper
+Paper Scissor
+
+Scissor Rock
+Scissor Paper
+Scissor Scissor
+
+Number of items
+Rock 
+Paper
+Scissor
