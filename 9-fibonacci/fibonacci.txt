@@ -1,5 +1,6 @@
 1. Exercise: 
-		- Run the mini-test based fibonacci and make sure all tests pass
+		- Run the mini-test based fibonacci and make sure all tests pass:
+			$ ruby 9-fibonacci/fibonacci_test.rb
 		- Move the fibonacci class into its own file and make all the tests pass
 2. Exercise:
     - Convert the given mini-test test to rspec version fibonacci_spec.rb.
