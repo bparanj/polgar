@@ -41,16 +41,34 @@
 		- Focus on getting it to work first, cleanup by refactoring and then focus on optimization
 		- When refactoring, start green and end in green
 		- Using existing tests as regression tests when making major changes to existing code.
+		
+10. Factorial
+	 	- Factorial and Fibonacci demo screencast
+		- Factorial and Fibonacci are example for : Examples --> Specs --> Requirements slide. 
+		- Illustrates Direct Input and Direct Output.
+		
+11. Bowling Game
+		- Demo screencast
+		- Using domain specific term and eliminating implementation details in the spec.
+		- Focus on the 'What' instead of 'How'. Declarative vs Imperative.
+		- Fake it till you make it.
+		- Do you always need to take small steps when writing tests?
 
+12. Role
+		- Being minimal when implementing the production code.
+
+13. Bowling Game Gem
+	  - miss() method implementation helped to setup the require statements and get the spec working.
+		- When to delete tests?
+		- Private methods are not tested. Why?
+		
 TODO:
 
 1. Realistic example of Open Closed Principle
-2. Factorial and Fibonacci. Example for : Examples --> Specs --> Requirements
-   slide. Illustrates Direct Input and Direct Output.
+2. Triangulation. Example.
 3. Contract tests. How to write? When to use them?
 4. Calculator kata	
-	
-Demo
+5. Guilded rose Kata. Dealing with legacy code.
+6. ? video game kata. Code retreat exercise.
 
-1. Bowling game demo screencast
-2. Factorial and Fibonacci demo screencast
+

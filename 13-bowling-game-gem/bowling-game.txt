@@ -1,0 +1,6 @@
+1. git clone https://github.com/bparanj/Bowing-Game
+2. git log
+3. You will see the commit hash for each commit like : 
+ 		commit 5102f45b2c584cf2f5efaa17e9640c0c288bcf8d
+	 You can checkout a particular commit by :
+	  git co 5102f45b2c584cf2f5efaa17e9640c0c288bcf8d
