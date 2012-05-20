@@ -11,7 +11,7 @@ class Week
     if n.to_i < 6
       DAYS[n] 
     else
-      ""
+      nil
     end
   end
   
