@@ -1,6 +1,7 @@
 1. 
 
-describe ClassName do
+describe "The outer describe block in a spec names the class or module under test. It can also be a string" do
+
 
 end
 

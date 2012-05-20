@@ -17,6 +17,9 @@
 
 3. Canonical 
 		- Canonical test structure practice for Given, When, Then.
+		- Given - Precondition
+		- When  - Exercise the SUT
+		- Then  - Postcondition
 		- State Verification
 
 4. Meszaros 
@@ -52,7 +55,8 @@
 		- Common interview question
 		- Learn recursive solution and optimize the execution by using non-recursive solution
 		- Focus on getting it to work first, cleanup by refactoring and then focus on optimization
-		- When refactoring, start green and end in green
+		- When refactoring, start green and end in green. Why? To avoid violating definition of
+		  refactoring.
 		- Using existing tests as regression tests when making major changes to existing code.
 		- State Verification
 		
@@ -77,17 +81,40 @@
 	  - miss() method implementation helped to setup the require statements and get the spec working.
 		- When to delete tests?
 		- Private methods are not tested. Why?
+		- BDD style tests read like sentences in a specification. 
+		- Scoring description and examples were translated to specs.
+
+14. twits
+		- Dealing with third party API.
+		- Thin adapter layer to insulate your application from external API.
+		- What abusing mocks looks like
+		- Brittle tests that break even when the behavior does not change caused by mock abuse
+		- Integration tests should test the layer that interacts with external API.
+		- Using too many mocks indicate badly designed API. So called fluent interface is actually
+		  a train wreck. Fluent interface is ok for languages like Java where it is the only option.
 		
 TODO:
 
 1. Realistic example of Open Closed Principle
-2. Triangulation. Example. Maybe 
+2. Triangulation. Example. Multi-currency stock report example from Kent Beck's book. 
 3. Contract tests. How to write? When to use them?
 4. Calculator kata	
 5. Guilded rose Kata. Dealing with legacy code.
-6. ? video game kata. Code retreat exercise.
-7. Dealing with third party API. Braintree example. Illustrate learning tests which become
-	 regression tests. Thin adapter layer to insulate your application from external API.
+6. Conway's game of life game. Objective: To practice 'Do the simplest thing that could possibly work' by applying the four simple rules:
+
+		1. Pass all tests.
+		2. No duplication of behavior or configuration.
+		3. Clear, expressive and consistent
+				a) Do not put the implementation of unrelated ideas in the same method.
+				b) Classes should organize ideas in a readily understandable way.
+				c) Use appropriate names so you don't have to explain method, member or class names with
+				   additional documentation
+				d) Methods and classes should be implemented so they can be understood totally from their
+				   public interfaces. This not only allows for up-front testing, but decreases coupling.
+		4. Minimizes classes, modules and methods. This is a reminder to make the code simple
+		 	 and concise.
+
+7. Braintree example. Illustrate learning tests which become regression tests. 
 8. Example of brittle test that breaks even when the behavior does not change. How to fix it?
 9. Using too many mocks and stubs and what it implies about the design.
 10. Passing flag into a method and how to fix it.
