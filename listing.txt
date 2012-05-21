@@ -92,6 +92,13 @@
 		- Integration tests should test the layer that interacts with external API.
 		- Using too many mocks indicate badly designed API. So called fluent interface is actually
 		  a train wreck. Fluent interface is ok for languages like Java where it is the only option.
+
+15. Week
+	  - Introduction to Contract tests. How to write? 
+		- Contract tests explicitly documents the behavior of the API for invalid inputs.
+		  Hash#fetch throws exception that is implicit in the code.
+		- Reliable test : Test breaks when the code changes the return value to blank string from
+		 	nil. Test fails when it should. This is good.
 		
 TODO:
 
@@ -116,6 +123,7 @@ TODO:
 
 7. Braintree example. Illustrate learning tests which become regression tests. 
 8. Example of brittle test that breaks even when the behavior does not change. How to fix it?
+   Brittleness due to over specification and how to avoid it?
 9. Using too many mocks and stubs and what it implies about the design.
 10. Passing flag into a method and how to fix it.
 11. Single responsibility principle. No And, Or, or But.

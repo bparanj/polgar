@@ -5,11 +5,11 @@ describe Uncommenter do
 
   it "should uncomment a given file" do
 
-    input = <<EOM
+    input = <<-EOM
     # This is a comment.
       This is not a comment.
     # This is another comment
-EOM
+    EOM
     infile = StringIO.new(input)
     outfile = StringIO.new("")
     
