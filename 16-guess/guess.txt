@@ -27,13 +27,18 @@ Write a program that generates a random number between 0 and 100 (inclusive). Th
 1. Spec 1 deals with the problem of randomness. You cannot use stub to deal with this spec because
 	 you will mock yourself out. The spec checks only the range of the generated random number is 
 	 within the expected range.
+	
 2. Spec 2 shows how you can defer decisions about how you will interact with the user, it 
  	 could be standard out, GUI, client server app etc. Fake object is injected into the game 	  
    object. The interface output is discovered during the mocking and it hides the details about 
-	 the type of interface that must be implemented to communicate with an user.
+	 the type of interface that must be implemented to communicate with an user. Game delegates any
+	 user interfacing code to a concrete console object therefore it obeys single responsibility
+	 principle. Console objects also obey the single responsibility principle.
+
 3. Spec 3 exposes the bug due to wrong default value in the constructor. The fix shows how to
 	 invert dependencies of concreted classes to abstract interface. In this case the abstract
 	 interface is output and not specific method like puts or GUI related method that ties the game
 	 logic to a concrete implementation.
+
 4. Spec 4 breaks existing spec 2. It is fixed by using as_null_object which ignores any messages
  	 not set as expectation to be ignored.

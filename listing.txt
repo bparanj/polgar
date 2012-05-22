@@ -99,6 +99,14 @@
 		  Hash#fetch throws exception that is implicit in the code.
 		- Reliable test : Test breaks when the code changes the return value to blank string from
 		 	nil. Test fails when it should. This is good.
+
+16. Guess
+    - How to test random behavior
+    - Illustrates the use of as_null_object
+		- Illustrates the inverting dependencies
+		- How to make your code depend on abstractions instead of concretions
+		- Illustrates single responsibility principle
+		- Illustrates programming to an interface not to an implementation
 		
 TODO:
 
