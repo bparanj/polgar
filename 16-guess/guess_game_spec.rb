@@ -5,6 +5,8 @@ describe GuessGame do
     game = GuessGame.new
     result = game.random
     
-    result.should == 50
+    expected = 1..100
+    # expected.include?(result) -- This is also ok (does not use rspec matcher)
+    expected.should cover(result)
   end
 end
