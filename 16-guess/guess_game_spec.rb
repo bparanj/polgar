@@ -30,19 +30,21 @@ describe GuessGame do
   end
   
   it "should perform validation of the guess entered by the user : lower than 1" do
-    fake_console = double('Console')
-    game = GuessGame.new(fake_console)
+    game = GuessGame.new
     game.guess = 0
     
     game.error.should == 'The number must be between 1 and 100'            
   end
   
   it "should perform validation of the guess entered by the user : higher than 100" do
-    fake_console = double('Console')
-    game = GuessGame.new(fake_console)
+    game = GuessGame.new
     game.guess = 101
     
     game.error.should == 'The number must be between 1 and 100'            
+  end
+  
+  it "should give clue when the input is valid" do
+    
   end
   
 end
