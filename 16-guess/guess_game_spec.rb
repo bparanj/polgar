@@ -11,7 +11,7 @@ describe GuessGame do
   end
   
   it "should display 'Welcome to the Guessing Game' when the game begins" do
-    fake_console = mock('Console')
+    fake_console = double('Console')
     fake_console.should_receive(:output).with('Welcome to the Guessing Game')
     game = GuessGame.new(fake_console)
     game.start
