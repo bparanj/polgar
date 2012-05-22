@@ -1,6 +1,7 @@
+require_relative 'standard_output'
 
 class GuessGame
-  def initialize(console=STDOUT)
+  def initialize(console=StandardOutput.new)
     @console = console
   end
   
