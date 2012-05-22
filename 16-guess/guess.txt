@@ -1,0 +1,23 @@
+Guessing Game
+
+Write a program that generates a random number between 0 and 100 (inclusive). The user must guess this number. Each correct guess (if it was a number) will receive the response "Guess Higher!" or "Guess Lower!". Once the user has successfully guessed the number, you will print various statistics about their performance as detailed below:
+
+* The prompt should display : "Welcome to the Guessing Game"
+* When the program is run it should generate a random number between 0 and 100 inclusive
+* You will display a command line prompt for the user to enter the number representing their guess. Quitting is not an option. The user can only end the game by guessing the target number. Be sure that your prompt explains to them what they are to do.
+* Once you have received a value from the user, you should perform validation. If the user has given you an invalid value (anything other than a number between 1 and 100), display an appropriate error message. If the user has given you a valid value, display a message either telling them that there were correct or should guess higher or lower as described above. This process should continue until they guess the correct number.
+* Once the user has guessed the target number correctly, you should display a "report" to them on their performance. This report should provide the following information:
+	- The target number
+	- The number of guesses it took the user to guess the target number
+	- A list of all the valid values guessed by the user in the order in which they were guessed.
+	- A calculated value called "Cumulative error". Cumulative error is defined as the sum of the absolute value of the difference between the target number and the values guessed. For example : if the target number was 30 and the user guessed 50, 25, 35, and 30, the cumulative error would be calculated as follows:
+	
+	|50-30| + |25-30| + |35-30| + |30-30| = 35
+	
+	Hint: See http://www.w3schools.com/jsref/jsref_abs.asp for assistance
+	- A calculated value called "Average Error" which is calculated as follows: cumulative error / number of valid guesses. Using the above number set, the average error is 8.75.
+	- A text feedback response based on the following rules:
+			* If average error is 10.0 or lower, the message "Incredible guessing!"
+			* If average error is higher than above but under 20.0, "Good job!"
+			* If average error is higher than 20 but under 30.0, "Fair!"
+			* Anything other score: "You are horrible at this game!"
