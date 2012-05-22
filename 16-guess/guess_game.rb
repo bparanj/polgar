@@ -1,3 +1,4 @@
+
 class GuessGame
   def initialize(console=STDOUT)
     @console = console

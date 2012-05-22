@@ -16,4 +16,9 @@ describe GuessGame do
     game = GuessGame.new(fake_console)
     game.start
   end
+  
+  it "should display 'Welcome to the Guessing Game' to the standard output when the game begins" do
+    game = GuessGame.new
+    game.start
+  end
 end
