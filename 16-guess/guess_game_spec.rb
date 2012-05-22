@@ -11,7 +11,7 @@ describe GuessGame do
   end
   
   it "should display 'Welcome to the Guessing Game' when the game begins" do
-    fake_console = double('Console')
+    fake_console = double('Console').as_null_object
     fake_console.should_receive(:output).with('Welcome to the Guessing Game')
     game = GuessGame.new(fake_console)
     game.start
@@ -20,5 +20,12 @@ describe GuessGame do
   it "should display 'Welcome to the Guessing Game' to the standard output when the game begins" do
     game = GuessGame.new
     game.start
+  end
+  
+  it "should prompt the user to enter the number representing their guess. Prompt should explain to users what they are to do." do
+    fake_console = double('Console').as_null_object
+    fake_console.should_receive(:prompt).with('Enter a number between 1 and 100 to guess the number')
+    game = GuessGame.new(fake_console)
+    game.start    
   end
 end
