@@ -107,6 +107,7 @@
 		- How to make your code depend on abstractions instead of concretions
 		- Illustrates single responsibility principle
 		- Illustrates programming to an interface not to an implementation
+		- When to use partial stub on a real object is illustrated by spec 7 and 8
 		
 TODO:
 

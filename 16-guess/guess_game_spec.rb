@@ -43,8 +43,21 @@ describe GuessGame do
     game.error.should == 'The number must be between 1 and 100'            
   end
   
-  it "should give clue when the input is valid" do
-    
+  it "should give clue when the input is valid and is less than the computer pick" do
+    fake_randomizer = stub(:get => 25)
+    fake_console = double('Console').as_null_object
+    fake_console.should_receive(:output).with('Your guess is lower')
+    game = GuessGame.new(fake_console, fake_randomizer)
+    game.stub(:random).and_return { 25 }
+    game.guess = 10    
+  end
+
+  it "should give clue when the input is valid and is greater than the computer pick" do
+    fake_randomizer = stub(:get => 25)
+    fake_console = double('Console').as_null_object
+    fake_console.should_receive(:output).with('Your guess is higher')
+    game = GuessGame.new(fake_console, fake_randomizer)
+    game.guess = 35    
   end
   
 end

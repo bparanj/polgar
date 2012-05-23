@@ -1,13 +1,14 @@
 require_relative 'standard_output'
+require_relative 'randomizer'
 
 class GuessGame
-  attr_accessor :guess
+  attr_reader :guess
   attr_accessor :error
   attr_reader :random
   
-  def initialize(console=StandardOutput.new)
+  def initialize(console=StandardOutput.new, randomizer=Randomizer.new)
     @console = console
-    @random = Random.new.rand(1..100)
+    @random = randomizer.get
   end
     
   def start
@@ -16,8 +17,28 @@ class GuessGame
   end
   
   def guess=(n)
-    if (n < 1) or (n > 100)
+    @guess = n
+    give_clue if valid
+  end
+  
+  private
+  
+  def valid
+    if (@guess < 1) or (@guess > 100)
       @error = 'The number must be between 1 and 100'
+      false
+    else
+      true
+    end
+  end
+  
+  def give_clue
+    if @guess < @random
+      @console.output('Your guess is lower')
+    elsif @guess > @random
+      @console.output('Your guess is higher')
+    else
+      # @console.output('Your guess is correct')
     end
   end
 end

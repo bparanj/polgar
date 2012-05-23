@@ -42,3 +42,9 @@ Write a program that generates a random number between 0 and 100 (inclusive). Th
 
 4. Spec 4 breaks existing spec 2. It is fixed by using as_null_object which ignores any messages
  	 not set as expectation to be ignored.
+
+5. Spec 5 and 6 simplified by removing unnecessary double.
+
+6. Spec 7 and 8 illustrates use of mocks and partial stubs. Minimize partial stubs and use them 
+   only when it is absolutely required.
+
