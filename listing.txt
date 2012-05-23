@@ -49,7 +49,8 @@
 8. Rock 
 	  - Rock, paper, scissors game
     - How to use double dispatch and make your code object oriented.
-		- Exercise: Replace angry rock gem internal implementation with the double dispatch solution.
+		- Exercise: Replace angry rock gem internal implementation with the double dispatch
+		  solution.
 
 9. Fibonacci
 		- Common interview question
@@ -78,7 +79,8 @@
 		- Being minimal when implementing the production code.
 
 13. Bowling Game Gem
-	  - miss() method implementation helped to setup the require statements and get the spec working.
+	  - miss() method implementation helped to setup the require statements and get the spec
+	 		working.
 		- When to delete tests?
 		- Private methods are not tested. Why?
 		- BDD style tests read like sentences in a specification. 
@@ -109,17 +111,19 @@
 		- Single responsibility principle. No And, Or, or But.
 		- Illustrates programming to an interface not to an implementation
 		- When to use partial stub on a real object is illustrated by spec 7 and 8
-		- Random test failures due to partial stub fixed by isolating the random number generation
+		- Random test failures due to partial stub fixed by isolating the random number
+		 	generation
 		- Methods are small and focused on doing one thing
+		- Illustrates how to write contract tests in rspec. 
 		
+ 
 TODO:
 
 1. Realistic example of Open Closed Principle
 2. Triangulation. Example. Multi-currency stock report example from Kent Beck's book. 
-3. Contract tests. How to write? When to use them?
-4. Calculator kata	
-5. Guilded rose Kata. Dealing with legacy code.
-6. Conway's game of life game. Objective: To practice 'Do the simplest thing that could possibly work' by applying the four simple rules:
+3. Calculator kata	
+4. Guilded rose Kata. Dealing with legacy code.
+5. Conway's game of life game. Objective: To practice 'Do the simplest thing that could possibly work' by applying the four simple rules:
 
 		1. Pass all tests.
 		2. No duplication of behavior or configuration.
@@ -133,12 +137,12 @@ TODO:
 		4. Minimizes classes, modules and methods. This is a reminder to make the code simple
 		 	 and concise.
 
-7. Braintree example. Illustrate learning tests which become regression tests. 
-8. Example of brittle test that breaks even when the behavior does not change. How to fix it?
+6. Braintree example. Illustrate learning tests which become regression tests. 
+7. Example of brittle test that breaks even when the behavior does not change. How to fix it?
    Brittleness due to over specification and how to avoid it?
-9. Using too many mocks and stubs and what it implies about the design.
-10. Passing flag into a method and how to fix it.
-11. Testing logic via UI and how to fix it.
+8. Using too many mocks and stubs and what it implies about the design.
+9. Passing flag into a method and how to fix it.
+10. Testing logic via UI and how to fix it.
 
 
 
