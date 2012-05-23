@@ -106,8 +106,11 @@
 		- Illustrates the inverting dependencies
 		- How to make your code depend on abstractions instead of concretions
 		- Illustrates single responsibility principle
+		- Single responsibility principle. No And, Or, or But.
 		- Illustrates programming to an interface not to an implementation
 		- When to use partial stub on a real object is illustrated by spec 7 and 8
+		- Random test failures due to partial stub fixed by isolating the random number generation
+		- Methods are small and focused on doing one thing
 		
 TODO:
 
@@ -135,8 +138,7 @@ TODO:
    Brittleness due to over specification and how to avoid it?
 9. Using too many mocks and stubs and what it implies about the design.
 10. Passing flag into a method and how to fix it.
-11. Single responsibility principle. No And, Or, or But.
-12. Testing logic via UI and how to fix it.
+11. Testing logic via UI and how to fix it.
 
 
 
