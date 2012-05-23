@@ -18,7 +18,7 @@ class GuessGame
   
   def guess=(n)
     @guess = n
-    give_clue if valid
+    give_feedback if valid
   end
   
   private
@@ -32,13 +32,13 @@ class GuessGame
     end
   end
   
-  def give_clue
+  def give_feedback
     if @guess < @random
       @console.output('Your guess is lower')
     elsif @guess > @random
       @console.output('Your guess is higher')
     else
-      # @console.output('Your guess is correct')
+      @console.output('Your guess is correct')
     end
   end
 end
