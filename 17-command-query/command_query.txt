@@ -1,0 +1,27 @@
+Command Query Separation
+
+Before :
+
+Example of badly designed API that violates command query separation principle:
+
+user = User.new(params)
+
+if user.save
+  do something
+else
+  do something else
+end
+
+The save is inserting the record in the database. It is a command because it has a side effect. It is also returning true or false so it is also a query.
+
+After :
+
+user = User.new(params)
+user.save
+
+if user.persisted?
+  do something
+else
+  do something else
+end
+
