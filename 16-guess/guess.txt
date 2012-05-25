@@ -61,3 +61,14 @@ Write a program that generates a random number between 0 and 100 (inclusive). Th
    case, think about writing contract tests for the most dependent and important module of your
    application.
 
+	 Composability of objects forms new object structures to provide new functionality under
+	 different context. Describing the relationships between objects in terms of contract specs
+	 makes the roles explicit in the domain code. This is the domain model equivalent of making
+	 ER-model relationships explicit in persistent objects.
+	
+	 We need to know how the methods can be used by clients, and what they will do for them.
+	 Specification language for domain model consists of contract specs. Contract tests turns the
+	 implicit relationships between objects in the domain code explicit in the specification. Role is
+	 a generic type that captures the object relationships.
+	 
+

@@ -25,4 +25,4 @@ else
   do something else
 end
 
- 
+Object creation is not considered a side effect.
