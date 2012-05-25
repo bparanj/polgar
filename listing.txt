@@ -146,5 +146,5 @@ TODO:
 9. Passing flag into a method and how to fix it.
 10. Testing logic via UI and how to fix it.
 
-
+Composability diagram and Command Query Separation radio-like diagram for a list. This also clearly separates the behavior verification from state verification.
 

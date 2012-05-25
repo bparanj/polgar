@@ -1,13 +1,17 @@
 1. 
 
-describe "The outer describe block in a spec names the class or module under test. It can also be a string" do
+describe Movie, "Definition. Make sure single responsibility principle is obeyed." do
 
 
 end
 
+The first argument of the describe block in a spec is name of the class or module under test. It can also be a string. The second is an optional string. It is a good practice to include the second 
+string argument that describes the class and make sure that it does not have 'And', 'Or' or 'But'.
+If it obeys Single responsibility principle that it will not contain those words.
+
 2.
 
-it "should return expected value when something happens" do
+it "[Method Under Test] [Scenario] [Expected Behavior]" do
 
 end
 
