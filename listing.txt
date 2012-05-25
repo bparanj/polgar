@@ -115,7 +115,9 @@
 		 	generation
 		- Methods are small and focused on doing one thing
 		- Illustrates how to write contract tests in rspec. 
-		
+
+17. Command Query Separation
+    - Example of command query separation principle violation and its fix
  
 TODO:
 
