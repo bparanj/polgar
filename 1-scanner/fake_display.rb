@@ -1,3 +1,4 @@
+# This is actually a Test Spy
 class FakeDisplay
   attr_reader :last_line_item
   

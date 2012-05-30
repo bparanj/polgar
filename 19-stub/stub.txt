@@ -1,0 +1,6 @@
+1. In irb: 
+> require 'rspec/mocks/standalone'
+
+s = stub.as_null_object
+
+acts as a dev/null equivalent for tests. It ignores any messages. Useful for incidental interactions that is not relevant to what is being tested.
