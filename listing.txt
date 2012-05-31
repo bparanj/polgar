@@ -148,3 +148,6 @@ TODO:
 
 Composability diagram and Command Query Separation radio-like diagram for a list. This also clearly separates the behavior verification from state verification.
 
+Example for return values in Mocks
+
+Apply good practices to RoR eCommerce and show it as Before / After
