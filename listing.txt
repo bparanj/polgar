@@ -118,6 +118,15 @@
 
 17. Command Query Separation
     - Example of command query separation principle violation and its fix
+
+18. Test Spy
+		- Rails example showing how to use test spy for handling cookie related problem
+		
+19. Stub
+		- As null object explanation
+		
+20. Tweet Analysis
+		- 
  
 TODO:
 

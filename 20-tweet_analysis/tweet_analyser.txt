@@ -1,0 +1,4 @@
+1. Version 1 : 
+	 a) Command Query Separation violation
+   b) It looks like client is tied to the implementation details (it is accessing a data structure)
+			but it is actually any class that can respond to [] method
