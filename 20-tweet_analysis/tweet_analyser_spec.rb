@@ -31,10 +31,20 @@ describe TweetAnalyzer do
     analyzer.histogram("one").should == 1
   end
   
-  it "asks the user for recent tweets" do    
+  it "find the frequency of words in a user's tweets that appears multiple times" do    
     analyzer = TweetAnalyzer.new(@user)
     analyzer.word_frequency
     
     analyzer.histogram("two").should == 2
   end
+  
+  it "asks the user for recent tweets" do    
+    user = double('user')
+    expected_tweets = ["one two", "two"]
+    user.should_receive(:recent_tweets).and_return expected_tweets
+    
+    analyzer = TweetAnalyzer.new(user)
+    analyzer.word_frequency
+  end
+  
 end
