@@ -1,2 +1,28 @@
 1. See meszaros gem for how to eliminate loops in specs.
 2. Data driven spec and repeat methods are available in meszaros gem.
+
+From Alex Chaffe's presentation: https://github.com/alexch/test-driven
+
+Before :
+
+Matrix Test
+
+%w(a e i o u).each do |letter|
+  it "#{letter} is a vowel" do
+    assert { letter.vowel? }
+  end
+end
+
+This mixes what and how.
+
+After :
+
+Data Driven Spec
+
+specify "a, e, i, o, u are the vowel set" do
+  data_driven_spec(%w(a e i o u)) do |letter|
+    letter.should be_vowel
+  end
+end
+
+This is a specification that focuses only on "What".

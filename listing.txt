@@ -160,3 +160,6 @@ Composability diagram and Command Query Separation radio-like diagram for a list
 Example for return values in Mocks
 
 Apply good practices to RoR eCommerce and show it as Before / After
+
+
+

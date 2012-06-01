@@ -1,3 +1,5 @@
+RSpec Test Structure
+
 1. 
 
 describe Movie, "Definition. Make sure single responsibility principle is obeyed." do
@@ -11,7 +13,7 @@ If it obeys Single responsibility principle that it will not contain those words
 
 2.
 
-it "[Method Under Test] [Scenario] [Expected Behavior]" do
+specify "[Method Under Test] [Scenario] [Expected Behavior]" do
 
 end
 
@@ -21,3 +23,19 @@ Given
 When 
 Then
 
+Interactive Spec
+
+Standalone:
+
+1. gem install interactive_spec
+2. irspec
+3. > (1+1).should == 3
+
+Rails:
+
+1. gem 'interactive_rspec' in Gemfile
+2. bundle
+3. rails c
+> irspec
+> User.new(:name => 'matz').should_not be_valid
+> irspec 'spec/requests/users_spec.rb'
