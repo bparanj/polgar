@@ -2,3 +2,22 @@
 	 a) Command Query Separation violation
    b) It looks like client is tied to the implementation details (it is accessing a data structure)
 			but it is actually any class that can respond to [] method
+	
+2. Illustrates how to fix abuse of mocks.
+
+3. Illustrates how to write focused tests. If it is important that the user's recent tweets are 
+   used to calculate the frequency, write a separate test for that.
+
+4. Continuous Testing with Ruby uses mocks in the tests to write the tests for Mongodb. Because we
+ 	 have never used this db before, it shows breaking dependencies by testing against a real service
+   and then replacing those interactions with mocks. This results in lot of mocks in the tests. 
+
+	 Using mocks in this case is improper usage of mocks. Because you cannot drive the design of
+	 a third-party API (Mongodb API in this case). There is a better way to breaking the external 	
+	 dependencies. 
+	
+		1. First write learning tests. 
+		2. Then create a thin adapter layer that has well defined interface. This adapter layer will
+		   encapsulate the interaction with Mongodb. Now you can mock the thin adapter layer in your
+		   code and write integration tests for the adapter tests that will interact with Mongodb. 
+		   This prevents the changes in Mongodb API from impacting the domain code.
