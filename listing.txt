@@ -126,7 +126,14 @@
 		- As null object explanation
 		
 20. Tweet Analysis
-		- 
+		- How to deal with external dependencies in your domain code?
+		
+21. Learning Tests
+    - Why is it important in TDD context?
+    - Examples : 
+				a) Mongodb Koans : https://github.com/bparanj/mongodb-koans
+				b) Specs to describe features of RSpec at https://www.relishapp.com/rspec
+				   Example:  https://www.relishapp.com/rspec/rspec-mocks/v/2-10/docs/method-stubs/as-null-object
  
 TODO:
 
