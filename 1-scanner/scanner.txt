@@ -6,7 +6,9 @@ attr_reader :last_line_item
 
 	Using this real object R2d2Display is also slow. Let's use a Fake object to speed up the test.
 	
-	2. Using fake object, the spec now runs fast. Dependency injection is used to create scanner object with a fake display.
+	2. Manual Mock Example
+	
+	Using fake object, the spec now runs fast. Dependency injection is used to create scanner object with a fake display.
 	
 	When we write tests, we have to divide and conquer. This test tells us how scanner objects affect displays. This test helps us to see whether a problem is due to scanner (Is scanner fulfilling its responsibility?). This helps us localize errors and save time.
 	
