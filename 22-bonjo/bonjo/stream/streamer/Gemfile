@@ -1,0 +1,9 @@
+gem "rails", "3.0"
+gem "rspec"
+gem "rspec-rails"
+gem "bson_ext"
+gem "mongo"
+gem "sqlite3"
+gem 'mongo_mapper', :git => 'git://github.com/jnunemaker/mongomapper.git', :branch => 'rails3'
+gem 'capybara'
+gem 'em-rspec'

@@ -1,0 +1,2 @@
+1. What is wrong in persistable_spec.rb ?
+2. How would you fix this mistake?

@@ -1,0 +1,5 @@
+db.createCollection("tweets", {capped:true, size:100000})
+db.tweets.ensureIndex( { location : "2d" } )
+db.tweets.find({location : {$near : [-120, 30]}})
+
+LOCATION = "-122.75,36.8,-121.75,37.8,-74,40,-73,41"

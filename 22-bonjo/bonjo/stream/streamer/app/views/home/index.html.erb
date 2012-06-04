@@ -1,0 +1,10 @@
+<% form_tag tweets_index_path, :method => "get" do %>
+<p>
+	Longitude:
+	<%= text_field_tag :longitude, params[:longitude] %><br/>
+	Latitude:
+	<%= text_field_tag :latitude, params[:latitude] %><br/>
+	<%= submit_tag "Search"  %><br/>
+</p>	
+<% end %>
+

@@ -1,0 +1,22 @@
+<% if @messages.empty? %>
+
+  <h1>No Results Found</h1>
+
+<% else %>
+	<h1>Latest Tweets</h1>
+ 
+	<table>
+	  <tr>
+	    <th></th>
+	  </tr>
+ 
+	<% @messages.each do |message| %>
+	  <tr>
+	    <td><%= message.tweet %></td>
+	  </tr>
+	<% end %>
+	</table>
+ 
+<% end %>
+
+<%= link_to "Home", root_path %>
