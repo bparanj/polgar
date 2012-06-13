@@ -134,13 +134,26 @@
 				a) Mongodb Koans : https://github.com/bparanj/mongodb-koans
 				b) Specs to describe features of RSpec at https://www.relishapp.com/rspec
 				   Example:  https://www.relishapp.com/rspec/rspec-mocks/v/2-10/docs/method-stubs/as-null-object
-				c) Compare Mogodb Koans with Mongodb Specs. Which one is easier to grasp?
- 
+				c) Compare Mogodb Koans with Mongodb Specs. https://github.com/bparanj/mongodb_specs
+					 Which one is easier to grasp? 
+				d) Learning tests become regression tests. Mongodb version v1.6.2 gives 
+				   deprecation messages for one of the specs. This can be fixed by using the 
+				   new API before upgrading to this version.
+
+22. Bonjo
+    - Exercise to identify a mistake in a spec.
+
+
+BOOKMARK:
+
+1. Finish Mongodb learning specs.
+2. Continue from Tweet Analysis to show how to deal with external dependencies.
+
 TODO:
 
 1. Realistic example of Open Closed Principle
 2. Triangulation. Example. Multi-currency stock report example from Kent Beck's book. 
-3. Calculator kata	
+3. Calculator kata	(Revise the solution under revise directory)
 4. Guilded rose Kata. Dealing with legacy code.
 5. Conway's game of life game. Objective: To practice 'Do the simplest thing that could possibly work' by applying the four simple rules:
 
@@ -156,18 +169,38 @@ TODO:
 		4. Minimizes classes, modules and methods. This is a reminder to make the code simple
 		 	 and concise.
 
-6. Braintree example. Illustrate learning tests which become regression tests. 
 7. Example of brittle test that breaks even when the behavior does not change. How to fix it?
    Brittleness due to over specification and how to avoid it?
 8. Using too many mocks and stubs and what it implies about the design.
 9. Passing flag into a method and how to fix it.
 10. Testing logic via UI and how to fix it.
+11. What does slow tests mean? What is wrong with using tools like Spork?
+
+Slow tests are the symptom of a bad design. Spork solves the wrong problem.
 
 Composability diagram and Command Query Separation radio-like diagram for a list. This also clearly separates the behavior verification from state verification.
+
+Avoid using Scenario outlines in Cucumber. Because those cases must be tested as part of the unit testing. 
 
 Example for return values in Mocks
 
 Apply good practices to RoR eCommerce and show it as Before / After
+
+
+DHH's post
+
+Seven don’ts of testing
+
+But while all that nuance might have a place in a two-hour dinner conversation with enlightened participants, not so much in a blog post. So let me firebomb the debate with the following list of nuance-less opinions about testing your typical Rails application:
+
+1. Don’t aim for 100% coverage.
+2. Code-to-test ratios above 1:2 is a smell, above 1:3 is a stink.
+3. You’re probably doing it wrong if testing is taking more than 1/3 of your time. You’re definitely doing it wrong if it’s taking up more than half.
+4. Don’t test standard Active Record associations, validations, or scopes.
+5. Reserve integration testing for issues arising from the integration of separate elements (aka don’t integration test things that can be unit tested instead).
+6. Don’t use Cucumber unless you live in the magic kingdom of non-programmers-writing-tests (and send me a bottle of fairy dust if you’re there!)
+7. Don’t force yourself to test-first every controller, model, and view (my ratio is typically 20% test-first, 80% test-after).
+
 
 
 
