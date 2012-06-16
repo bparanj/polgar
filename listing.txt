@@ -143,11 +143,9 @@
 22. Bonjo
     - Exercise to identify a mistake in a spec.
 
-
 BOOKMARK:
 
-1. Finish Mongodb learning specs.
-2. Continue from Tweet Analysis to show how to deal with external dependencies.
+1. Find example - Ports and Adapter architecture will be illustrated in this example
 
 TODO:
 
