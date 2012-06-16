@@ -138,7 +138,7 @@
 					 Which one is easier to grasp? 
 				d) Learning tests become regression tests. Mongodb version v1.6.2 gives 
 				   deprecation messages for one of the specs. This can be fixed by using the 
-				   new API before upgrading to this version.
+				   new API before upgrading your application to this version.
 
 22. Bonjo
     - Exercise to identify a mistake in a spec.

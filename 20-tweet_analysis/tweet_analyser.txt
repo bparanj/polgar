@@ -21,3 +21,5 @@
 		   encapsulate the interaction with Mongodb. Now you can mock the thin adapter layer in your
 		   code and write integration tests for the adapter tests that will interact with Mongodb. 
 		   This prevents the changes in Mongodb API from impacting the domain code.
+		
+		The caching example from the book can be rewritten using the above idea. This will be illustrated in another example separately. 
