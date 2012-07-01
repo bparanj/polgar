@@ -143,6 +143,12 @@
 22. Bonjo
     - Exercise to identify a mistake in a spec.
 
+23. IPN Handler
+		- Pushing logic to the right layer by applying separation of concerns.
+		- Using stubs to break external dependencies and make tests run fast.
+		- Using mocks to design your API.
+		- Using as_null_object to ignore incidental interactions and keep the tests focused.
+
 BOOKMARK:
 
 1. Find example - Ports and Adapter architecture will be illustrated in this example
