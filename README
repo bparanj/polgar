@@ -1,1 +1,17 @@
 Code examples for TDD Workbook. Illustrates concepts and before / after examples to illustrate anti-pattern refactored to a good design.
+
+How to deal with non deterministic behavior ?
+When do you stop writing tests?
+What is exploratory testing ?
+What should be the sequence of the tests? (It should tell a story)
+What do you do with the results of exploratory testing?
+Bird object for command query diagram
+How to make sure methods gets called correctly?
+Jasmine
+Contract tests are a way to express design intent in code. It makes design intent explicit. 
+Stub and mock at system boundaries is a bad advice
+If model changes how do u keep controller stubs in synch ?
+TDD is not enough
+What makes testing difficult? (Dependencies and Coupling)
+Check if tests can be deleted for all gems.
+Write a unit test when integration test catches a bug but there is no failing unit test.
