@@ -79,3 +79,38 @@ Write a program that generates a random number between 0 and 100 (inclusive). Th
 	fake console is used. Experimented in the irb to make sure the implementation of input works. This
 	is a change in the production code that is not driven by test.
 	
+10. Actual usage of the GuessGame :
+
+$ irb
+:001 > load './guess_game.rb'
+ => true 
+:002 > g = GuessGame.new
+ => #<GuessGame:0x007fa414139ab0 @console=#<StandardConsole:0x007fa414139a88>, @random=42> 
+:003 > g.start
+Welcome to the Guessing Game
+Enter a number between 1 and 100 to guess the number
+>
+ => nil 
+:001 > g.get_user_guess
+20
+Your guess is lower
+ => nil 
+:002 > g.get_user_guess
+30
+Your guess is lower
+ => nil 
+:003 > g.get_user_guess
+80
+Your guess is higher
+ => nil 
+:004 > g.get_user_guess
+70
+Your guess is higher
+ => nil 
+:005 > g.get_user_guess
+42
+Your guess is correct
+ => nil 
+
+11. Added to_s method to the classes so that the secret number is not revealed while playing the game.
+ 

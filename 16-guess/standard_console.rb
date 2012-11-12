@@ -12,4 +12,8 @@ class StandardConsole
   def input
     gets.chomp.to_i
   end
+  
+  def to_s
+    "Standard Console"
+  end
 end

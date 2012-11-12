@@ -21,6 +21,10 @@ class GuessGame
     give_feedback if valid
   end
   
+  def to_s
+    "You have chosen : #{@console} to play the guess game"
+  end
+  
   private
   
   def valid
