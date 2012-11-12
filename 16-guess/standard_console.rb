@@ -9,4 +9,7 @@ class StandardConsole
     puts ">"
   end
   
+  def input
+    gets.chomp.to_i
+  end
 end

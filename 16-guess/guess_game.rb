@@ -21,6 +21,11 @@ class GuessGame
     give_feedback if valid
   end
     
+  def get_user_guess
+    @guess = @console.input  
+    give_feedback if valid
+  end
+  
   private
   
   def valid

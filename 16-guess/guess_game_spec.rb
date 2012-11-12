@@ -31,8 +31,10 @@ describe GuessGame do
   end
   
   it "should perform validation of the guess entered by the user : lower than 1" do
-    game = GuessGame.new
-    game.guess = 0
+    fake_console = double('Console').as_null_object
+    fake_console.stub(:input) { 0 }
+    game = GuessGame.new(fake_console)
+    game.get_user_guess
     
     game.error.should == 'The number must be between 1 and 100'            
   end

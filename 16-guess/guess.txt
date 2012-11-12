@@ -56,7 +56,7 @@ Write a program that generates a random number between 0 and 100 (inclusive). Th
    only when it is absolutely required.
 
 7. Console Interface spec illustrates how to write contract specs. This avoids the problem of specs
-   going passing / failing due to mocks going out of synch with the code.	When to use them? If you
+   going passing / failing due to mocks going out of synch with the code. When to use them? If you
    are using lot of mocks you many not be able to write contract tests for all of them. In this 
    case, think about writing contract tests for the most dependent and important module of your
    application.
@@ -70,5 +70,12 @@ Write a program that generates a random number between 0 and 100 (inclusive). Th
 	 Specification language for domain model consists of contract specs. Contract tests turns the
 	 implicit relationships between objects in the domain code explicit in the specification. Role is
 	 a generic type that captures the object relationships.
-	 
 
+8. StandardOutput and StandardInput is combined into one StandardConsole object. This new object encapsulates
+   the interaction with the standard input and output (monitor & keyboard).
+
+9. Spec 5 :   it "should perform validation of the guess entered by the user : lower than 1" 
+	modified to use StandardConsole#input method. The actual method does not get called in the test. The 
+	fake console is used. Experimented in the irb to make sure the implementation of input works. This
+	is a change in the production code that is not driven by test.
+	
