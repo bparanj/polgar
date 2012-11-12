@@ -15,12 +15,7 @@ class GuessGame
     @console.output("Welcome to the Guessing Game")
     @console.prompt("Enter a number between 1 and 100 to guess the number")
   end
-  
-  def guess=(n)
-    @guess = n
-    give_feedback if valid
-  end
-    
+      
   def get_user_guess
     @guess = @console.input  
     give_feedback if valid
