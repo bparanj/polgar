@@ -1,10 +1,10 @@
 require_relative 'console_interface_spec'
-require_relative 'standard_output'
+require_relative 'standard_console'
 
-describe StandardOutput do
+describe StandardConsole do
   
   before(:each) do
-    @object = StandardOutput.new
+    @object = StandardConsole.new
   end
   
   it_behaves_like "Console Interface"

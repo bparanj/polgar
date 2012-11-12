@@ -1,4 +1,4 @@
-require_relative 'standard_output'
+require_relative 'standard_console'
 require_relative 'randomizer'
 
 class GuessGame
@@ -6,7 +6,7 @@ class GuessGame
   attr_accessor :error
   attr_reader :random
   
-  def initialize(console=StandardOutput.new, randomizer=Randomizer.new)
+  def initialize(console=StandardConsole.new, randomizer=Randomizer.new)
     @console = console
     @random = randomizer.get
   end
@@ -20,7 +20,7 @@ class GuessGame
     @guess = n
     give_feedback if valid
   end
-  
+    
   private
   
   def valid

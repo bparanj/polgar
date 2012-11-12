@@ -61,12 +61,12 @@ describe GuessGame do
     game.guess = 35    
   end
 
-  it "should recognize the correct answer when the guess is corrrect." do
+  it "should recognize the correct answer when the guess is correct." do
     fake_randomizer = stub(:get => 25)
     fake_console = double('Console').as_null_object
     fake_console.should_receive(:output).with('Your guess is correct')
     game = GuessGame.new(fake_console, fake_randomizer)
-    game.guess = 25    
+    game.guess = 25
   end
   
 end
