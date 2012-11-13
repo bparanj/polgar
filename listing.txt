@@ -140,7 +140,7 @@
 				   deprecation messages for one of the specs. This can be fixed by using the 
 				   new API before upgrading your application to this version.
 
-22. Bonjo
+22. Bonjo [DELETED FROM THE BOOK DUE TO TOO MUCH BAGGAGE]
     - Exercise to identify a mistake in a spec.
 
 23. IPN Handler
@@ -150,10 +150,12 @@
 		- Using as_null_object to ignore incidental interactions and keep the tests focused.
 
 BOOKMARK:
+------------------
 
 1. Find example - Ports and Adapter architecture will be illustrated in this example
 
 TODO:
+------------------
 
 1. Realistic example of Open Closed Principle
 2. Triangulation. Example. Multi-currency stock report example from Kent Beck's book. 
@@ -190,8 +192,8 @@ Example for return values in Mocks
 
 Apply good practices to RoR eCommerce and show it as Before / After
 
-
 DHH's post
+------------------
 
 Seven don’ts of testing
 
