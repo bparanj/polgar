@@ -1,8 +1,4 @@
-class Calculator
-  def calculate(input)
-    input.to_i
-  end
-end
+require_relative 'calculator'
 
 describe Calculator do
   let(:calculator) {  Calculator.new }
@@ -19,4 +15,21 @@ describe Calculator do
     result.should == 1    
   end
   
+  it "returns the sum of the numbers for '1,2'" do
+    result = calculator.calculate("1,2")
+    
+    result.should == 3        
+  end
+  
+  it 'can add unknown amount of numbers' do
+    result = calculator.calculate("1,2,3,4")
+    
+    result.should == 10           
+  end
+  
+  it 'allows new line also as a delimiter' do
+    result = calculator.calculate("1\n2,3")
+    
+    result.should == 6
+  end
 end
