@@ -32,4 +32,10 @@ describe Calculator do
     
     result.should == 6
   end
+  
+  it 'supports different delimiters' do
+    result = calculator.calculate("//;\n1;2")
+    
+    result.should == 3    
+  end
 end

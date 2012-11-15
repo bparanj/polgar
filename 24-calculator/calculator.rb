@@ -1,19 +1,30 @@
 class Calculator
 
   def calculate(input)
-    normalize_delimiter(input)
-    if input.include?(',')
-      numbers = convert_string_to_integers(input)
+    initialize_delimiter_and_input(input)  
+    normalize_delimiter
+    if @string.include?(',')
+      numbers = convert_string_to_integers
       calculate_sum(numbers)
     else
-      input.to_i
+      @string.to_i
     end
   end
   
   private
   
-  def convert_string_to_integers(input)
-    strings = input.split(',')
+  def initialize_delimiter_and_input(input)
+    if input.start_with?('//')
+      @delimiter = input[2]
+      @string = input[4, input.length - 1]
+    else
+      @delimiter = "\n"
+      @string = input
+    end
+  end
+
+  def convert_string_to_integers
+    strings = @string.split(',')
     strings.map{|x| x.to_i}
   end
   
@@ -21,7 +32,7 @@ class Calculator
     numbers.inject{|sum, n| sum + n}
   end
   
-  def normalize_delimiter(input)
-    input.gsub!("\n", ',')
+  def normalize_delimiter
+    @string.gsub!(@delimiter, ',')
   end
 end

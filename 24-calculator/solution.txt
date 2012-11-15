@@ -165,9 +165,94 @@ class Calculator
 end
 
 
+Version 8
+
+After experimenting in the irb and learning about the String API, the quick and dirty implementation looks like this:
+
+class Calculator
+
+  def calculate(input)
+    if input.start_with?('//')
+      @delimiter = input[2]
+      @string = input[4, input.length - 1]
+    else
+      @delimiter = "\n"
+      @string = input
+    end
+      
+    normalize_delimiter
+    if @string.include?(',')
+      numbers = convert_string_to_integers
+      calculate_sum(numbers)
+    else
+      @string.to_i
+    end
+  end
+  
+  private
+  
+  def convert_string_to_integers
+    strings = @string.split(',')
+    strings.map{|x| x.to_i}
+  end
+  
+  def calculate_sum(numbers)
+    numbers.inject{|sum, n| sum + n}
+  end
+  
+  def normalize_delimiter
+    @string.gsub!(@delimiter, ',')
+  end
+end
 
 
+Version 9
 
+After Cleanup :
+
+class Calculator
+
+  def calculate(input)
+    initialize_delimiter_and_input(input)  
+    normalize_delimiter
+    if @string.include?(',')
+      numbers = convert_string_to_integers
+      calculate_sum(numbers)
+    else
+      @string.to_i
+    end
+  end
+  
+  private
+  
+  def initialize_delimiter_and_input(input)
+    if input.start_with?('//')
+      @delimiter = input[2]
+      @string = input[4, input.length - 1]
+    else
+      @delimiter = "\n"
+      @string = input
+    end
+  end
+
+  def convert_string_to_integers
+    strings = @string.split(',')
+    strings.map{|x| x.to_i}
+  end
+  
+  def calculate_sum(numbers)
+    numbers.inject{|sum, n| sum + n}
+  end
+  
+  def normalize_delimiter
+    @string.gsub!(@delimiter, ',')
+  end
+end
+
+
+We are not passing in the string to be processed into methods anymore. Since it is
+needed by most of the methods, it is now an instance variable. It simplifies the interface
+of the private methods by eliminating the argument.
 
 
 
