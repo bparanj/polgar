@@ -131,14 +131,14 @@
 21. Learning Tests
     - Why is it important in TDD context?
     - Examples : 
-				a) Mongodb Koans : https://github.com/bparanj/mongodb-koans
-				b) Specs to describe features of RSpec at https://www.relishapp.com/rspec
-				   Example:  https://www.relishapp.com/rspec/rspec-mocks/v/2-10/docs/method-stubs/as-null-object
-				c) Compare Mogodb Koans with Mongodb Specs. https://github.com/bparanj/mongodb_specs
-					 Which one is easier to grasp? 
-				d) Learning tests become regression tests. Mongodb version v1.6.2 gives 
-				   deprecation messages for one of the specs. This can be fixed by using the 
-				   new API before upgrading your application to this version.
+		a) Mongodb Koans : https://github.com/bparanj/mongodb-koans
+		b) Specs to describe features of RSpec at https://www.relishapp.com/rspec
+		   Example:  https://www.relishapp.com/rspec/rspec-mocks/v/2-10/docs/method-stubs/as-null-object
+		c) Compare Mogodb Koans with Mongodb Specs. https://github.com/bparanj/mongodb_specs
+		   Which one is easier to grasp? 
+		d) Learning tests become regression tests. Mongodb version v1.6.2 gives 
+		   deprecation messages for one of the specs. This can be fixed by using the 
+		   new API before upgrading your application to this version.
 
 22. Bonjo [DELETED FROM THE BOOK DUE TO TOO MUCH BAGGAGE]
     - Exercise to identify a mistake in a spec.
@@ -157,27 +157,25 @@ BOOKMARK:
 TODO:
 ------------------
 
-1. Realistic example of Open Closed Principle
-2. Triangulation. Example. Multi-currency stock report example from Kent Beck's book. 
-3. Calculator kata	(Revise the solution under revise directory)
-4. Guilded rose Kata. Dealing with legacy code.
-5. Conway's game of life game. Objective: To practice 'Do the simplest thing that could possibly work' by applying the four simple rules:
+1. Guilded rose Kata. Dealing with legacy code.
+2. Conway's game of life game. 
 
-		1. Pass all tests.
-		2. No duplication of behavior or configuration.
-		3. Clear, expressive and consistent
-				a) Do not put the implementation of unrelated ideas in the same method.
-				b) Classes should organize ideas in a readily understandable way.
-				c) Use appropriate names so you don't have to explain method, member or class names with
+   Objective: 
+	- To practice 'Do the simplest thing that could possibly work' by applying the four simple rules:
+	1. Pass all tests.
+	2. No duplication of behavior or configuration.
+	3. Clear, expressive and consistent
+		a) Do not put the implementation of unrelated ideas in the same method.
+		b) Classes should organize ideas in a readily understandable way.
+		c) Use appropriate names so you don't have to explain method, member or class names with
 				   additional documentation
-				d) Methods and classes should be implemented so they can be understood totally from their
+		d) Methods and classes should be implemented so they can be understood totally from their
 				   public interfaces. This not only allows for up-front testing, but decreases coupling.
-		4. Minimizes classes, modules and methods. This is a reminder to make the code simple
+	4. Minimizes classes, modules and methods. This is a reminder to make the code simple
 		 	 and concise.
 
 7. Example of brittle test that breaks even when the behavior does not change. How to fix it?
    Brittleness due to over specification and how to avoid it?
-8. Using too many mocks and stubs and what it implies about the design.
 9. Passing flag into a method and how to fix it.
 10. Testing logic via UI and how to fix it.
 11. What does slow tests mean? What is wrong with using tools like Spork?
@@ -206,7 +204,3 @@ But while all that nuance might have a place in a two-hour dinner conversation w
 5. Reserve integration testing for issues arising from the integration of separate elements (aka don’t integration test things that can be unit tested instead).
 6. Don’t use Cucumber unless you live in the magic kingdom of non-programmers-writing-tests (and send me a bottle of fairy dust if you’re there!)
 7. Don’t force yourself to test-first every controller, model, and view (my ratio is typically 20% test-first, 80% test-after).
-
-
-
-
